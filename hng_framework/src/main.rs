@@ -1,35 +1,41 @@
-extern crate hng_framework;
+pub mod device;
 
-use hng_framework::node;
-use hng_framework::node::light::Light;
+use device::channel::{OnOff, Brightness};
 
 struct MiLight{
     state: bool,
+    brightness: i32,
 }
 
-impl node::Node for MiLight{
-    fn start() {
-        println!("Starting node");
+impl device::Light for MiLight{}
+
+impl device::channel::OnOff for MiLight{
+    fn set_onoff(&self, val: bool) {
+        println!("Starting onoff");
+    }
+
+    fn get_onoff(&self, val: bool){
+        println!("Getting onoff");
     }
 }
 
-impl node::light::Light for MiLight {
-
-    fn set_onoff(&mut self, state: bool) {
-            self.state = state;
+impl device::channel::Brightness for MiLight{
+    fn set_brightness(&self, brightness: i32){
+        println!("Brightness = {}", brightness);
     }
 
+    fn get_brightness(&self, brightness: i32){
+        println!("Brightness = {}", brightness);
+    }
 }
+
 
 fn main() {
 
-    println!("{:?}", hng_framework::node::test());
+    let mut milight = MiLight{state: false, brightness: 0};
 
-    println!("{:?}", hng_framework::node::light::test());
+    milight.set_brightness(100);
 
-    let mut milight = MiLight{state: false};
-
-    milight.set_onoff(true);
 
     println!("{}", milight.state);
 }

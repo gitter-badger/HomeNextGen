@@ -1,4 +1,4 @@
-pub mod node;
+pub mod device;
 
 #[test]
 fn it_works() {
