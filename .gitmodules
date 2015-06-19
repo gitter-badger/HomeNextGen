@@ -1,3 +1,4 @@
 [submodule "openwrt"]
 	path = openwrt
-	url = https://github.com/kteza1/openwrt
+    url = https://github.com/kteza1/openwrt
+    branch = bb-14.07
