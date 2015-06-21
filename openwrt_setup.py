@@ -2,6 +2,9 @@ import subprocess
 import re
 import shutil
 
+
+#NOTE: Make sure you do 'make menuconfig' and save to enable dependent packages on the packages that you have enabled
+
 config_file = './openwrt/.config'
 
 def package_enable_disable(package_name, option):
