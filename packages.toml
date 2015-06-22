@@ -1,0 +1,12 @@
+[install]
+
+
+[install_enable]
+basic = ["luci", "file"]
+bluetooth = ["bluez-libs", "bluez-utils", "libexpat"]
+
+[enable]
+basic = ["block-mount"]
+usb = ["kmod-usb-core", "kmod-usb-ohci", "kmod-usb-storage", "kmod-usb2"]
+bluetooth = ["kmod-bluetooth", "kmod-bluetooth_6lowpan"]
+

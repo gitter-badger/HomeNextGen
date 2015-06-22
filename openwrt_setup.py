@@ -2,8 +2,24 @@ import subprocess
 import re
 import shutil
 
-
+#NOTE: After 'feeds install', '.config' is reflecting the installs only after saving the 'menuconfig'. So save after running the script first
+#NOTE: Rerun this script
 #NOTE: Make sure you do 'make menuconfig' and save to enable dependent packages on the packages that you have enabled
+
+#Base System:
+	#block-mount
+#Kernel modules -> Other Modules:
+	#kmod-bluetooth
+	#kmod-bluetooth_6lowpan
+#Kernel modules ->USB Support:
+	#kmod-usb-core
+	#kmod-usb-ohci
+	#kmod-usb-storage
+	#kmod-usb2
+#Libraries:
+	#bluez-libs
+#Utilities:
+	#bluez-utils
 
 config_file = './openwrt/.config'
 
@@ -45,7 +61,9 @@ for arg in [update, packages_install]:
     output = popen.stdout.read()
     print(output)
 
-for package in basic.split() + ble.split():
-    package_enable_disable(package, 'y')
 
+others = "kmod-usb-core kmod-usb-ohci kmod-usb-storage kmod-usb2 kmod-bluetooth kmod-bluetooth_6lowpan block-mount"
+
+for package in basic.split() + ble.split() + others.split():
+    package_enable_disable(package, 'y')
 
