@@ -62,20 +62,19 @@ def execute_command(command):
     output = popen.stdout.read()
     print(output)
 
-def feeds_update():
-    feeds_update_command = "./openwrt/scripts/feeds update -a"
-    execute_command(feeds_update_command)
-    
 
 def package_install(package):
     print('@@@@@@ installing ' + package + ' @@@@@@')
     package_install_command = './openwrt/scripts/feeds install ' + package
     execute_command(package_install_command)
 
+#there is no .config file in the beginning. create a .config with basic config
+execute_command("make -C ./openwrt defconfig")
 
-#feeds_update()
+#download all the feeds
+execute_command("./openwrt/scripts/feeds update -a")
 
-
+#install and enable packages based on config file
 with open('packages.toml', 'rb') as f:
     config = toml.load(f)
     for section in config:
@@ -85,9 +84,10 @@ with open('packages.toml', 'rb') as f:
                 packages = categories[category]
                 for package in packages:
                     package_install(package)
-                # package won't be available in .config first time after install.
-                # menuconfig should be save for these sections to reflect in .config
-                # do something here to simulate that
+            # package won't be available in .config first time after install.
+            # menuconfig should be save for these sections to reflect in .config
+            # do something here to simulate that
+            execute_command("make -C ./openwrt defconfig")
             for category in categories:
                 packages = categories[category]
                 for package in packages:
@@ -99,3 +99,6 @@ with open('packages.toml', 'rb') as f:
                 packages = categories[category]
                 for package in packages:
                    package_enable_disable(package, 'y')
+
+#by now, your packages have been enabled, but not their dependencies
+execute_command("make -C ./openwrt defconfig")
