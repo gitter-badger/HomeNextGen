@@ -1,0 +1,17 @@
+[package]
+name = "hello"
+version = "0.1.0"
+authors = ["kteza1 <k.teza1@gmail.com>"]
+
+
+[dependencies.std]
+path = "../rust/src/libstd"
+## optionally enable jemalloc and backtrace support
+#features = ["jemalloc"]
+#features = ["jemalloc", "backtrace"]
+## or enable jemalloc in dynamically linked flavor
+features = ["jemalloc_dynamic"]
+
+# don't forget to enable LTO for smaller binaries
+[profile.release]
+lto = true

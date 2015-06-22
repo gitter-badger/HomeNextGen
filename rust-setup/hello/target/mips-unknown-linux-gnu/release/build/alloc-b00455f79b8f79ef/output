@@ -1,0 +1,187 @@
+cargo:rustc-link-search=native=/home/ravitejareddy/Desktop/HomeNextGen/rust-setup/hello/target/mips-unknown-linux-gnu/release/build/alloc-b00455f79b8f79ef/out
+checking for xsltproc... false
+checking for mips-unknown-linux-gnu-gcc... mips-openwrt-linux-gcc -mips32r2 -msoft-float -mabi=32
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... yes
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether mips-openwrt-linux-gcc -mips32r2 -msoft-float -mabi=32 accepts -g... yes
+checking for mips-openwrt-linux-gcc -mips32r2 -msoft-float -mabi=32 option to accept ISO C89... none needed
+checking whether compiler supports -std=gnu99... yes
+checking whether compiler supports -Wall... yes
+checking whether compiler supports -pipe... yes
+checking whether compiler supports -g3... yes
+checking whether compiler supports -g1 -ffunction-sections -fdata-sections... yes
+checking how to run the C preprocessor... mips-openwrt-linux-gcc -mips32r2 -msoft-float -mabi=32 -E
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking whether byte ordering is bigendian... yes
+checking size of void *... 4
+checking size of int... 4
+checking size of long... 4
+checking size of intmax_t... 8
+checking build system type... x86_64-unknown-linux-gnu
+checking host system type... mips-unknown-linux-gnu
+checking for mips-unknown-linux-gnu-ar... mips-openwrt-linux-ar
+checking malloc.h usability... yes
+checking malloc.h presence... yes
+checking for malloc.h... yes
+checking whether malloc_usable_size definition can use const argument... yes
+checking whether __attribute__ syntax is compilable... yes
+checking whether compiler supports -fvisibility=hidden... yes
+checking whether compiler supports -Werror... yes
+checking whether tls_model attribute is compilable... yes
+checking for a BSD-compatible install... /usr/bin/install -c
+checking for mips-unknown-linux-gnu-ranlib... mips-openwrt-linux-ar s
+checking for ld... /usr/bin/ld
+checking for autoconf... /usr/bin/autoconf
+checking for memalign... yes
+checking for valloc... yes
+checking whether compiler supports -O3... yes
+checking whether compiler supports -funroll-loops... yes
+checking configured backtracing method... N/A
+checking for sbrk... yes
+checking whether utrace(2) is compilable... no
+checking whether valgrind is compilable... yes
+checking whether a program using __builtin_ffsl is compilable... yes
+checking STATIC_PAGE_SHIFT... 12
+Missing VERSION file, and unable to generate it; creating bogus VERSION
+checking pthread.h usability... yes
+checking pthread.h presence... yes
+checking for pthread.h... yes
+checking for pthread_create in -lpthread... yes
+checking for _malloc_thread_cleanup... no
+checking for _pthread_mutex_init_calloc_cb... no
+checking for TLS... yes
+checking whether atomic(9) is compilable... no
+checking whether Darwin OSAtomic*() is compilable... no
+checking whether madvise(2) is compilable... yes
+checking whether to force 32-bit __sync_{add,sub}_and_fetch()... no
+checking whether to force 64-bit __sync_{add,sub}_and_fetch()... no
+checking for __builtin_clz... yes
+checking whether Darwin OSSpin*() is compilable... no
+checking whether glibc malloc hook is compilable... no
+checking whether glibc memalign hook is compilable... no
+checking whether pthreads adaptive mutexes is compilable... yes
+checking for stdbool.h that conforms to C99... yes
+checking for _Bool... yes
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating jemalloc.pc
+config.status: creating doc/html.xsl
+config.status: creating doc/manpages.xsl
+config.status: creating doc/jemalloc.xml
+config.status: creating include/jemalloc/jemalloc_macros.h
+config.status: creating include/jemalloc/jemalloc_protos.h
+config.status: creating include/jemalloc/jemalloc_typedefs.h
+config.status: creating include/jemalloc/internal/jemalloc_internal.h
+config.status: creating test/test.sh
+config.status: creating test/include/test/jemalloc_test.h
+config.status: creating config.stamp
+config.status: creating bin/jemalloc.sh
+config.status: creating include/jemalloc/jemalloc_defs.h
+config.status: include/jemalloc/jemalloc_defs.h is unchanged
+config.status: creating include/jemalloc/internal/jemalloc_internal_defs.h
+config.status: include/jemalloc/internal/jemalloc_internal_defs.h is unchanged
+config.status: creating test/include/test/jemalloc_test_defs.h
+config.status: test/include/test/jemalloc_test_defs.h is unchanged
+config.status: executing include/jemalloc/internal/private_namespace.h commands
+config.status: executing include/jemalloc/internal/private_unnamespace.h commands
+config.status: executing include/jemalloc/internal/public_symbols.txt commands
+config.status: executing include/jemalloc/internal/public_namespace.h commands
+config.status: executing include/jemalloc/internal/public_unnamespace.h commands
+config.status: executing include/jemalloc/internal/size_classes.h commands
+config.status: executing include/jemalloc/jemalloc_protos_jet.h commands
+config.status: executing include/jemalloc/jemalloc_rename.h commands
+config.status: executing include/jemalloc/jemalloc_mangle.h commands
+config.status: executing include/jemalloc/jemalloc_mangle_jet.h commands
+config.status: executing include/jemalloc/jemalloc.h commands
+===============================================================================
+jemalloc version   : 0.0.0-0-g0000000000000000000000000000000000000000
+library revision   : 2
+
+CC                 : mips-openwrt-linux-gcc -mips32r2 -msoft-float -mabi=32
+CPPFLAGS           : -I /home/ravitejareddy/Desktop/HomeNextGen/rust-setup/rust/src/liballoc/../rt/ -D_GNU_SOURCE -D_REENTRANT
+CFLAGS             : -std=gnu99 -Wall -pipe -g3 -g1 -ffunction-sections -fdata-sections -fvisibility=hidden -O3 -funroll-loops
+LDFLAGS            : 
+EXTRA_LDFLAGS      : 
+LIBS               :  -lpthread
+RPATH_EXTRA        : 
+
+XSLTPROC           : false
+XSLROOT            : 
+
+PREFIX             : /usr/local
+BINDIR             : /usr/local/bin
+INCLUDEDIR         : /usr/local/include
+LIBDIR             : /usr/local/lib
+DATADIR            : /usr/local/share
+MANDIR             : /usr/local/share/man
+
+srcroot            : /home/ravitejareddy/Desktop/HomeNextGen/rust-setup/rust/src/liballoc/../jemalloc/
+abs_srcroot        : /home/ravitejareddy/Desktop/HomeNextGen/rust-setup/rust/src/jemalloc/
+objroot            : 
+abs_objroot        : /home/ravitejareddy/Desktop/HomeNextGen/rust-setup/hello/target/mips-unknown-linux-gnu/release/build/alloc-b00455f79b8f79ef/out/jemalloc/
+
+JEMALLOC_PREFIX    : je_
+JEMALLOC_PRIVATE_NAMESPACE
+                   : je_
+install_suffix     : 
+autogen            : 0
+cc-silence         : 1
+debug              : 0
+code-coverage      : 0
+stats              : 1
+prof               : 0
+prof-libunwind     : 0
+prof-libgcc        : 0
+prof-gcc           : 0
+tcache             : 1
+fill               : 0
+utrace             : 0
+valgrind           : 1
+xmalloc            : 0
+munmap             : 0
+lazy_lock          : 0
+tls                : 1
+===============================================================================
+make: Entering directory `/home/ravitejareddy/Desktop/HomeNextGen/rust-setup/hello/target/mips-unknown-linux-gnu/release/build/alloc-b00455f79b8f79ef/out/jemalloc'
+mips-openwrt-linux-gcc -mips32r2 -msoft-float -mabi=32 -std=gnu99 -Wall -pipe -g3 -g1 -ffunction-sections -fdata-sections -fvisibility=hidden -O3 -funroll-loops -fPIC -DPIC -c -I /home/ravitejareddy/Desktop/HomeNextGen/rust-setup/rust/src/liballoc/../rt/ -D_GNU_SOURCE -D_REENTRANT -I/home/ravitejareddy/Desktop/HomeNextGen/rust-setup/rust/src/liballoc/../jemalloc/include -Iinclude -o src/jemalloc.pic.o /home/ravitejareddy/Desktop/HomeNextGen/rust-setup/rust/src/liballoc/../jemalloc/src/jemalloc.c
+mips-openwrt-linux-gcc -mips32r2 -msoft-float -mabi=32 -std=gnu99 -Wall -pipe -g3 -g1 -ffunction-sections -fdata-sections -fvisibility=hidden -O3 -funroll-loops -fPIC -DPIC -c -I /home/ravitejareddy/Desktop/HomeNextGen/rust-setup/rust/src/liballoc/../rt/ -D_GNU_SOURCE -D_REENTRANT -I/home/ravitejareddy/Desktop/HomeNextGen/rust-setup/rust/src/liballoc/../jemalloc/include -Iinclude -o src/arena.pic.o /home/ravitejareddy/Desktop/HomeNextGen/rust-setup/rust/src/liballoc/../jemalloc/src/arena.c
+mips-openwrt-linux-gcc -mips32r2 -msoft-float -mabi=32 -std=gnu99 -Wall -pipe -g3 -g1 -ffunction-sections -fdata-sections -fvisibility=hidden -O3 -funroll-loops -fPIC -DPIC -c -I /home/ravitejareddy/Desktop/HomeNextGen/rust-setup/rust/src/liballoc/../rt/ -D_GNU_SOURCE -D_REENTRANT -I/home/ravitejareddy/Desktop/HomeNextGen/rust-setup/rust/src/liballoc/../jemalloc/include -Iinclude -o src/atomic.pic.o /home/ravitejareddy/Desktop/HomeNextGen/rust-setup/rust/src/liballoc/../jemalloc/src/atomic.c
+mips-openwrt-linux-gcc -mips32r2 -msoft-float -mabi=32 -std=gnu99 -Wall -pipe -g3 -g1 -ffunction-sections -fdata-sections -fvisibility=hidden -O3 -funroll-loops -fPIC -DPIC -c -I /home/ravitejareddy/Desktop/HomeNextGen/rust-setup/rust/src/liballoc/../rt/ -D_GNU_SOURCE -D_REENTRANT -I/home/ravitejareddy/Desktop/HomeNextGen/rust-setup/rust/src/liballoc/../jemalloc/include -Iinclude -o src/base.pic.o /home/ravitejareddy/Desktop/HomeNextGen/rust-setup/rust/src/liballoc/../jemalloc/src/base.c
+mips-openwrt-linux-gcc -mips32r2 -msoft-float -mabi=32 -std=gnu99 -Wall -pipe -g3 -g1 -ffunction-sections -fdata-sections -fvisibility=hidden -O3 -funroll-loops -fPIC -DPIC -c -I /home/ravitejareddy/Desktop/HomeNextGen/rust-setup/rust/src/liballoc/../rt/ -D_GNU_SOURCE -D_REENTRANT -I/home/ravitejareddy/Desktop/HomeNextGen/rust-setup/rust/src/liballoc/../jemalloc/include -Iinclude -o src/bitmap.pic.o /home/ravitejareddy/Desktop/HomeNextGen/rust-setup/rust/src/liballoc/../jemalloc/src/bitmap.c
+mips-openwrt-linux-gcc -mips32r2 -msoft-float -mabi=32 -std=gnu99 -Wall -pipe -g3 -g1 -ffunction-sections -fdata-sections -fvisibility=hidden -O3 -funroll-loops -fPIC -DPIC -c -I /home/ravitejareddy/Desktop/HomeNextGen/rust-setup/rust/src/liballoc/../rt/ -D_GNU_SOURCE -D_REENTRANT -I/home/ravitejareddy/Desktop/HomeNextGen/rust-setup/rust/src/liballoc/../jemalloc/include -Iinclude -o src/chunk.pic.o /home/ravitejareddy/Desktop/HomeNextGen/rust-setup/rust/src/liballoc/../jemalloc/src/chunk.c
+mips-openwrt-linux-gcc -mips32r2 -msoft-float -mabi=32 -std=gnu99 -Wall -pipe -g3 -g1 -ffunction-sections -fdata-sections -fvisibility=hidden -O3 -funroll-loops -fPIC -DPIC -c -I /home/ravitejareddy/Desktop/HomeNextGen/rust-setup/rust/src/liballoc/../rt/ -D_GNU_SOURCE -D_REENTRANT -I/home/ravitejareddy/Desktop/HomeNextGen/rust-setup/rust/src/liballoc/../jemalloc/include -Iinclude -o src/chunk_dss.pic.o /home/ravitejareddy/Desktop/HomeNextGen/rust-setup/rust/src/liballoc/../jemalloc/src/chunk_dss.c
+mips-openwrt-linux-gcc -mips32r2 -msoft-float -mabi=32 -std=gnu99 -Wall -pipe -g3 -g1 -ffunction-sections -fdata-sections -fvisibility=hidden -O3 -funroll-loops -fPIC -DPIC -c -I /home/ravitejareddy/Desktop/HomeNextGen/rust-setup/rust/src/liballoc/../rt/ -D_GNU_SOURCE -D_REENTRANT -I/home/ravitejareddy/Desktop/HomeNextGen/rust-setup/rust/src/liballoc/../jemalloc/include -Iinclude -o src/chunk_mmap.pic.o /home/ravitejareddy/Desktop/HomeNextGen/rust-setup/rust/src/liballoc/../jemalloc/src/chunk_mmap.c
+mips-openwrt-linux-gcc -mips32r2 -msoft-float -mabi=32 -std=gnu99 -Wall -pipe -g3 -g1 -ffunction-sections -fdata-sections -fvisibility=hidden -O3 -funroll-loops -fPIC -DPIC -c -I /home/ravitejareddy/Desktop/HomeNextGen/rust-setup/rust/src/liballoc/../rt/ -D_GNU_SOURCE -D_REENTRANT -I/home/ravitejareddy/Desktop/HomeNextGen/rust-setup/rust/src/liballoc/../jemalloc/include -Iinclude -o src/ckh.pic.o /home/ravitejareddy/Desktop/HomeNextGen/rust-setup/rust/src/liballoc/../jemalloc/src/ckh.c
+mips-openwrt-linux-gcc -mips32r2 -msoft-float -mabi=32 -std=gnu99 -Wall -pipe -g3 -g1 -ffunction-sections -fdata-sections -fvisibility=hidden -O3 -funroll-loops -fPIC -DPIC -c -I /home/ravitejareddy/Desktop/HomeNextGen/rust-setup/rust/src/liballoc/../rt/ -D_GNU_SOURCE -D_REENTRANT -I/home/ravitejareddy/Desktop/HomeNextGen/rust-setup/rust/src/liballoc/../jemalloc/include -Iinclude -o src/ctl.pic.o /home/ravitejareddy/Desktop/HomeNextGen/rust-setup/rust/src/liballoc/../jemalloc/src/ctl.c
+mips-openwrt-linux-gcc -mips32r2 -msoft-float -mabi=32 -std=gnu99 -Wall -pipe -g3 -g1 -ffunction-sections -fdata-sections -fvisibility=hidden -O3 -funroll-loops -fPIC -DPIC -c -I /home/ravitejareddy/Desktop/HomeNextGen/rust-setup/rust/src/liballoc/../rt/ -D_GNU_SOURCE -D_REENTRANT -I/home/ravitejareddy/Desktop/HomeNextGen/rust-setup/rust/src/liballoc/../jemalloc/include -Iinclude -o src/extent.pic.o /home/ravitejareddy/Desktop/HomeNextGen/rust-setup/rust/src/liballoc/../jemalloc/src/extent.c
+mips-openwrt-linux-gcc -mips32r2 -msoft-float -mabi=32 -std=gnu99 -Wall -pipe -g3 -g1 -ffunction-sections -fdata-sections -fvisibility=hidden -O3 -funroll-loops -fPIC -DPIC -c -I /home/ravitejareddy/Desktop/HomeNextGen/rust-setup/rust/src/liballoc/../rt/ -D_GNU_SOURCE -D_REENTRANT -I/home/ravitejareddy/Desktop/HomeNextGen/rust-setup/rust/src/liballoc/../jemalloc/include -Iinclude -o src/hash.pic.o /home/ravitejareddy/Desktop/HomeNextGen/rust-setup/rust/src/liballoc/../jemalloc/src/hash.c
+mips-openwrt-linux-gcc -mips32r2 -msoft-float -mabi=32 -std=gnu99 -Wall -pipe -g3 -g1 -ffunction-sections -fdata-sections -fvisibility=hidden -O3 -funroll-loops -fPIC -DPIC -c -I /home/ravitejareddy/Desktop/HomeNextGen/rust-setup/rust/src/liballoc/../rt/ -D_GNU_SOURCE -D_REENTRANT -I/home/ravitejareddy/Desktop/HomeNextGen/rust-setup/rust/src/liballoc/../jemalloc/include -Iinclude -o src/huge.pic.o /home/ravitejareddy/Desktop/HomeNextGen/rust-setup/rust/src/liballoc/../jemalloc/src/huge.c
+mips-openwrt-linux-gcc -mips32r2 -msoft-float -mabi=32 -std=gnu99 -Wall -pipe -g3 -g1 -ffunction-sections -fdata-sections -fvisibility=hidden -O3 -funroll-loops -fPIC -DPIC -c -I /home/ravitejareddy/Desktop/HomeNextGen/rust-setup/rust/src/liballoc/../rt/ -D_GNU_SOURCE -D_REENTRANT -I/home/ravitejareddy/Desktop/HomeNextGen/rust-setup/rust/src/liballoc/../jemalloc/include -Iinclude -o src/mb.pic.o /home/ravitejareddy/Desktop/HomeNextGen/rust-setup/rust/src/liballoc/../jemalloc/src/mb.c
+mips-openwrt-linux-gcc -mips32r2 -msoft-float -mabi=32 -std=gnu99 -Wall -pipe -g3 -g1 -ffunction-sections -fdata-sections -fvisibility=hidden -O3 -funroll-loops -fPIC -DPIC -c -I /home/ravitejareddy/Desktop/HomeNextGen/rust-setup/rust/src/liballoc/../rt/ -D_GNU_SOURCE -D_REENTRANT -I/home/ravitejareddy/Desktop/HomeNextGen/rust-setup/rust/src/liballoc/../jemalloc/include -Iinclude -o src/mutex.pic.o /home/ravitejareddy/Desktop/HomeNextGen/rust-setup/rust/src/liballoc/../jemalloc/src/mutex.c
+mips-openwrt-linux-gcc -mips32r2 -msoft-float -mabi=32 -std=gnu99 -Wall -pipe -g3 -g1 -ffunction-sections -fdata-sections -fvisibility=hidden -O3 -funroll-loops -fPIC -DPIC -c -I /home/ravitejareddy/Desktop/HomeNextGen/rust-setup/rust/src/liballoc/../rt/ -D_GNU_SOURCE -D_REENTRANT -I/home/ravitejareddy/Desktop/HomeNextGen/rust-setup/rust/src/liballoc/../jemalloc/include -Iinclude -o src/prof.pic.o /home/ravitejareddy/Desktop/HomeNextGen/rust-setup/rust/src/liballoc/../jemalloc/src/prof.c
+mips-openwrt-linux-gcc -mips32r2 -msoft-float -mabi=32 -std=gnu99 -Wall -pipe -g3 -g1 -ffunction-sections -fdata-sections -fvisibility=hidden -O3 -funroll-loops -fPIC -DPIC -c -I /home/ravitejareddy/Desktop/HomeNextGen/rust-setup/rust/src/liballoc/../rt/ -D_GNU_SOURCE -D_REENTRANT -I/home/ravitejareddy/Desktop/HomeNextGen/rust-setup/rust/src/liballoc/../jemalloc/include -Iinclude -o src/quarantine.pic.o /home/ravitejareddy/Desktop/HomeNextGen/rust-setup/rust/src/liballoc/../jemalloc/src/quarantine.c
+mips-openwrt-linux-gcc -mips32r2 -msoft-float -mabi=32 -std=gnu99 -Wall -pipe -g3 -g1 -ffunction-sections -fdata-sections -fvisibility=hidden -O3 -funroll-loops -fPIC -DPIC -c -I /home/ravitejareddy/Desktop/HomeNextGen/rust-setup/rust/src/liballoc/../rt/ -D_GNU_SOURCE -D_REENTRANT -I/home/ravitejareddy/Desktop/HomeNextGen/rust-setup/rust/src/liballoc/../jemalloc/include -Iinclude -o src/rtree.pic.o /home/ravitejareddy/Desktop/HomeNextGen/rust-setup/rust/src/liballoc/../jemalloc/src/rtree.c
+mips-openwrt-linux-gcc -mips32r2 -msoft-float -mabi=32 -std=gnu99 -Wall -pipe -g3 -g1 -ffunction-sections -fdata-sections -fvisibility=hidden -O3 -funroll-loops -fPIC -DPIC -c -I /home/ravitejareddy/Desktop/HomeNextGen/rust-setup/rust/src/liballoc/../rt/ -D_GNU_SOURCE -D_REENTRANT -I/home/ravitejareddy/Desktop/HomeNextGen/rust-setup/rust/src/liballoc/../jemalloc/include -Iinclude -o src/stats.pic.o /home/ravitejareddy/Desktop/HomeNextGen/rust-setup/rust/src/liballoc/../jemalloc/src/stats.c
+mips-openwrt-linux-gcc -mips32r2 -msoft-float -mabi=32 -std=gnu99 -Wall -pipe -g3 -g1 -ffunction-sections -fdata-sections -fvisibility=hidden -O3 -funroll-loops -fPIC -DPIC -c -I /home/ravitejareddy/Desktop/HomeNextGen/rust-setup/rust/src/liballoc/../rt/ -D_GNU_SOURCE -D_REENTRANT -I/home/ravitejareddy/Desktop/HomeNextGen/rust-setup/rust/src/liballoc/../jemalloc/include -Iinclude -o src/tcache.pic.o /home/ravitejareddy/Desktop/HomeNextGen/rust-setup/rust/src/liballoc/../jemalloc/src/tcache.c
+mips-openwrt-linux-gcc -mips32r2 -msoft-float -mabi=32 -std=gnu99 -Wall -pipe -g3 -g1 -ffunction-sections -fdata-sections -fvisibility=hidden -O3 -funroll-loops -fPIC -DPIC -c -I /home/ravitejareddy/Desktop/HomeNextGen/rust-setup/rust/src/liballoc/../rt/ -D_GNU_SOURCE -D_REENTRANT -I/home/ravitejareddy/Desktop/HomeNextGen/rust-setup/rust/src/liballoc/../jemalloc/include -Iinclude -o src/util.pic.o /home/ravitejareddy/Desktop/HomeNextGen/rust-setup/rust/src/liballoc/../jemalloc/src/util.c
+mips-openwrt-linux-gcc -mips32r2 -msoft-float -mabi=32 -std=gnu99 -Wall -pipe -g3 -g1 -ffunction-sections -fdata-sections -fvisibility=hidden -O3 -funroll-loops -fPIC -DPIC -c -I /home/ravitejareddy/Desktop/HomeNextGen/rust-setup/rust/src/liballoc/../rt/ -D_GNU_SOURCE -D_REENTRANT -I/home/ravitejareddy/Desktop/HomeNextGen/rust-setup/rust/src/liballoc/../jemalloc/include -Iinclude -o src/tsd.pic.o /home/ravitejareddy/Desktop/HomeNextGen/rust-setup/rust/src/liballoc/../jemalloc/src/tsd.c
+mips-openwrt-linux-gcc -mips32r2 -msoft-float -mabi=32 -std=gnu99 -Wall -pipe -g3 -g1 -ffunction-sections -fdata-sections -fvisibility=hidden -O3 -funroll-loops -fPIC -DPIC -c -I /home/ravitejareddy/Desktop/HomeNextGen/rust-setup/rust/src/liballoc/../rt/ -D_GNU_SOURCE -D_REENTRANT -I/home/ravitejareddy/Desktop/HomeNextGen/rust-setup/rust/src/liballoc/../jemalloc/include -Iinclude -o src/valgrind.pic.o /home/ravitejareddy/Desktop/HomeNextGen/rust-setup/rust/src/liballoc/../jemalloc/src/valgrind.c
+mips-openwrt-linux-gcc -mips32r2 -msoft-float -mabi=32 -shared -Wl,-soname,libjemalloc.so.2  -o lib/libjemalloc.so.2 src/jemalloc.pic.o src/arena.pic.o src/atomic.pic.o src/base.pic.o src/bitmap.pic.o src/chunk.pic.o src/chunk_dss.pic.o src/chunk_mmap.pic.o src/ckh.pic.o src/ctl.pic.o src/extent.pic.o src/hash.pic.o src/huge.pic.o src/mb.pic.o src/mutex.pic.o src/prof.pic.o src/quarantine.pic.o src/rtree.pic.o src/stats.pic.o src/tcache.pic.o src/util.pic.o src/tsd.pic.o src/valgrind.pic.o  -lpthread 
+ln -sf libjemalloc.so.2 lib/libjemalloc.so
+make: Leaving directory `/home/ravitejareddy/Desktop/HomeNextGen/rust-setup/hello/target/mips-unknown-linux-gnu/release/build/alloc-b00455f79b8f79ef/out/jemalloc'
+cargo:rustc-link-lib=jemalloc

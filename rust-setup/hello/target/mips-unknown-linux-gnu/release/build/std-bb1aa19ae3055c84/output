@@ -1,0 +1,37 @@
+TARGET = Some("mips-unknown-linux-gnu")
+TARGET = Some("mips-unknown-linux-gnu")
+CARGO_MANIFEST_DIR = Some("/home/ravitejareddy/Desktop/HomeNextGen/rust-setup/rust/src/libstd")
+OUT_DIR = Some("/home/ravitejareddy/Desktop/HomeNextGen/rust-setup/hello/target/mips-unknown-linux-gnu/release/build/std-bb1aa19ae3055c84/out")
+OPT_LEVEL = Some("3")
+PROFILE = Some("release")
+release 3
+TARGET = Some("mips-unknown-linux-gnu")
+HOST = Some("x86_64-unknown-linux-gnu")
+CC_mips-unknown-linux-gnu = None
+CC_mips_unknown_linux_gnu = Some("mips-openwrt-linux-gcc")
+TARGET = Some("mips-unknown-linux-gnu")
+HOST = Some("x86_64-unknown-linux-gnu")
+CFLAGS_mips-unknown-linux-gnu = None
+CFLAGS_mips_unknown_linux_gnu = None
+TARGET_CFLAGS = None
+CFLAGS = None
+TARGET = Some("mips-unknown-linux-gnu")
+HOST = Some("x86_64-unknown-linux-gnu")
+CC_mips-unknown-linux-gnu = None
+CC_mips_unknown_linux_gnu = Some("mips-openwrt-linux-gcc")
+running: "mips-openwrt-linux-gcc" "-O3" "-c" "-ffunction-sections" "-fdata-sections" "-fPIC" "/home/ravitejareddy/Desktop/HomeNextGen/rust-setup/rust/src/libstd/../rt/rust_builtin.c" "-o" "/home/ravitejareddy/Desktop/HomeNextGen/rust-setup/hello/target/mips-unknown-linux-gnu/release/build/std-bb1aa19ae3055c84/out/../rt/rust_builtin.o"
+TARGET = Some("mips-unknown-linux-gnu")
+HOST = Some("x86_64-unknown-linux-gnu")
+AR_mips-unknown-linux-gnu = None
+AR_mips_unknown_linux_gnu = Some("mips-openwrt-linux-ar")
+TARGET = Some("mips-unknown-linux-gnu")
+HOST = Some("x86_64-unknown-linux-gnu")
+AR_mips-unknown-linux-gnu = None
+AR_mips_unknown_linux_gnu = Some("mips-openwrt-linux-ar")
+running: "mips-openwrt-linux-ar" "crus" "/home/ravitejareddy/Desktop/HomeNextGen/rust-setup/hello/target/mips-unknown-linux-gnu/release/build/std-bb1aa19ae3055c84/out/librust_builtin.a" "/home/ravitejareddy/Desktop/HomeNextGen/rust-setup/hello/target/mips-unknown-linux-gnu/release/build/std-bb1aa19ae3055c84/out/../rt/rust_builtin.o"
+cargo:rustc-link-search=native=/home/ravitejareddy/Desktop/HomeNextGen/rust-setup/hello/target/mips-unknown-linux-gnu/release/build/std-bb1aa19ae3055c84/out
+cargo:rustc-link-lib=static=rust_builtin
+cargo:rustc-link-lib=static=rustrt_native
+make: Entering directory `/home/ravitejareddy/Desktop/HomeNextGen/rust-setup/rust/src/compiler-rt'
+make: Nothing to be done for `triple-builtins'.
+make: Leaving directory `/home/ravitejareddy/Desktop/HomeNextGen/rust-setup/rust/src/compiler-rt'
